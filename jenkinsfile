@@ -25,7 +25,7 @@ pipeline {
                     echo $DOCKERHUB_CREDS_PSW | docker login \
                     -u $DOCKERHUB_CREDS_USR --password-stdin
 
-                    docker push madhav4702/madhav/myapp:latest
+                    docker push madhav4702/myapp:latest
                 '''
             }
         }
